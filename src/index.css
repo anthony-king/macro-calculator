@@ -1,0 +1,17 @@
+html {
+    background-color: #F7F7F7;
+}
+
+.container {
+  width: 33%;
+  padding-top: 15px;
+}
+
+#weight {
+  width: 150px;
+}
+
+.recommendation {
+  padding-top: 15px;
+  padding-left: 40px;
+}
