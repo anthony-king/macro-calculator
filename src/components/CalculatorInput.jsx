@@ -26,17 +26,17 @@ class CalculatorInput extends React.Component {
       <div>
 
         <div className="level">
-          <div class="level-left">
-            <div class="level-item">
+          <div className="level-left">
+            <div className="level-item">
               <div className="field is-horizontal">
-                <div class="field-label is-large">
-                  <label class="label">Weight</label>
+                <div className="field-label is-large">
+                  <label className="label">Weight</label>
                 </div>
-                <div class="field-body is-small">
-                  <div class="field">
-                    <p class="control">
+                <div className="field-body is-small">
+                  <div className="field">
+                    <p className="control">
                       <input 
-                        class="input is-large"
+                        className="input is-large"
                         id="weight"
                         type="text"
                         placeholder="weight"
@@ -50,16 +50,16 @@ class CalculatorInput extends React.Component {
             </div>
           </div>  
 
-          <div class="level-right">
-            <div class="level-item">    
-              <div class="field is-horizontal">
-                <div class="field-label is-large">
-                  <label class="label">Sex</label>
+          <div className="level-right">
+            <div className="level-item">    
+              <div className="field is-horizontal">
+                <div className="field-label is-large">
+                  <label className="label">Sex</label>
                 </div>
-                <div class="field-body">
-                  <div class="field is-narrow">
-                    <div class="control">
-                      <div class="select is-fullwidth is-large">
+                <div className="field-body">
+                  <div className="field is-narrow">
+                    <div className="control">
+                      <div className="select is-fullwidth is-large">
                         <select id="sex" onChange={this.onChange.bind(this)} >
                           <option value="female" >Female</option>
                           <option value="male" >Male</option>
@@ -75,15 +75,15 @@ class CalculatorInput extends React.Component {
           
         <div className="level">
           <div className="level-left">
-            <div class="level-item">
-              <div class="field is-horizontal">
-                <div class="field-label is-large">
-                  <label class="label">Goal</label>
+            <div className="level-item">
+              <div className="field is-horizontal">
+                <div className="field-label is-large">
+                  <label className="label">Goal</label>
                 </div>
-                <div class="field-body">
-                  <div class="field is-narrow">
-                    <div class="control">
-                      <div class="select is-fullwidth is-large">
+                <div className="field-body">
+                  <div className="field is-narrow">
+                    <div className="control">
+                      <div className="select is-fullwidth is-large">
                         <select id="goal" onChange={this.onChange.bind(this)} >
                           <option value="musclegain"> Muscle Gain</option>
                           <option value="fatloss">Fat Loss</option>
@@ -97,16 +97,16 @@ class CalculatorInput extends React.Component {
             </div>
           </div>
 
-          <div class="level-right">
-            <div class="level-item">  
-              <div class="field is-horizontal">
-                <div class="field-label">
+          <div className="level-right">
+            <div className="level-item">  
+              <div className="field is-horizontal">
+                <div className="field-label">
                   
                 </div>
-                <div class="field-body">
-                  <div class="field">
-                    <div class="control">
-                      <button class="button is-danger is-outlined is-large"
+                <div className="field-body">
+                  <div className="field">
+                    <div className="control">
+                      <button className="button is-danger is-outlined is-large"
                         onClick={() => {
                           this.props.handleCalculateButtonClick(this.state.sex, this.state.weight, this.state.goal)
                         }}

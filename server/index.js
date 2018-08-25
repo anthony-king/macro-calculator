@@ -34,19 +34,23 @@ app.post('/save', function(req, res) {
     rec_fat: req.body.fat
   };
 
+  // saves profile to Database
   db.save(profileData);
 });
 
 app.get('/', function(req, res) {
-  console.log('from get / inside the server/index.js')
-  db.selectAll(function(err, data) {
-    if(err) {
-      res.sendStatus(500);
-    } else {
-      console.log('from get /', data);
-      res.json(data);
-    }
-  });
+  // I'm rethinking this part, instead of displaying saved profiles automatically, add a "display
+  // saved profiles link"
+
+  // console.log('from get / inside the server/index.js')
+  // db.selectAll(function(err, data) {
+  //   if(err) {
+  //     res.sendStatus(500);
+  //   } else {
+  //     console.log('from get /', data);
+  //     res.json(data);
+  //   }
+  // });
 });
 
 app.listen(8080, function() {
