@@ -11,7 +11,15 @@ html {
   width: 150px;
 }
 
+#sex {
+  padding-left: 10px;
+}
+
+.button {
+  margin-left: 9px;
+}
 .recommendation {
   padding-top: 15px;
   padding-left: 40px;
 }
+

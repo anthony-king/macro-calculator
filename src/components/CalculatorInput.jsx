@@ -54,7 +54,7 @@ class CalculatorInput extends React.Component {
             <div className="level-item">    
               <div className="field is-horizontal">
                 <div className="field-label is-large">
-                  <label className="label">Sex</label>
+                  <label id="sex" className="label">Sex</label>
                 </div>
                 <div className="field-body">
                   <div className="field is-narrow">

@@ -1,9 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var db = require('../database-mongo/index.js')
+// var db = require('../database-mongo/index.js')
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 // var items = require('../database-mysql');
-var profiles = require('../database-mongo');
+// var profiles = require('../database-mongo');
 
 var app = express();
 // I could not with any confidence explain what these next two lines do
@@ -53,7 +53,7 @@ app.get('/', function(req, res) {
   // });
 });
 
-app.listen(8080, function() {
-  console.log('listening on port 8080!');
+app.listen(3000, function() {
+  console.log('listening on port 3000!');
 });
 
